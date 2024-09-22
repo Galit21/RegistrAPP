@@ -35,3 +35,31 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+.largeText {
+  font-size: 30px;
+}
+
+.paddingTitle {
+  padding-top: 50px;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+}
+
+.paddingRight {
+  padding-right: 20px;
+}
+
+.roundedInput {
+  border-radius: 40px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
