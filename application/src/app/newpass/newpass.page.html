@@ -1,0 +1,31 @@
+<ion-header></ion-header>
+
+<ion-content [fullscreen]="true" class="center">
+  <div class="ion-padding-top">
+    <h1 class="ion-text-center largeText paddingTitle roboto-mono">
+      Recupera tu clave
+    </h1>
+  </div>
+  <br />
+  <div class="container-center ion-padding-top">
+    <ion-item class="roundedInput">
+      <ion-icon class="paddingRight" name="person-outline"></ion-icon>
+      <ion-input
+        label="Nombre Usuario"
+        labelPlacement="floating"
+        placeholder="Enter text"
+      ></ion-input>
+    </ion-item>
+  </div>
+  <br />
+  <div class="container-center">
+    <ion-button
+      expand="block"
+      (click)="presentToast('bottom')"
+      shape="round"
+      routerLink="/login"
+    >
+      <!-- [disabled]="true"-->Enviar</ion-button
+    >
+  </div>
+</ion-content>

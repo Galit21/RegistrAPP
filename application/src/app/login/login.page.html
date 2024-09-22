@@ -1,0 +1,42 @@
+<ion-header></ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding-top">
+    <h1 class="ion-text-center largeText paddingTitle roboto-mono">
+      Iniciar Sesión
+    </h1>
+  </div>
+  <br />
+  <div class="container-center">
+    <ion-item class="roundedInput">
+      <ion-icon class="paddingRight" name="person-outline"></ion-icon>
+      <ion-input
+        [(ngModel)]="user"
+        label="Nombre Usuario"
+        labelPlacement="floating"
+        placeholder="Enter text"
+      ></ion-input>
+    </ion-item>
+  </div>
+  <br />
+  <div class="container-center">
+    <ion-item class="roundedInput">
+      <ion-icon class="paddingRight" name="lock-closed-outline"></ion-icon>
+      <ion-input
+        [(ngModel)]="pswrd"
+        label="Contraseña"
+        labelPlacement="floating"
+        placeholder="Enter text"
+      ></ion-input>
+    </ion-item>
+  </div>
+  <br />
+  <div class="container-center ion-padding-top">
+    <ion-button shape="round" routerLink="/home" (click)="login()"
+      ><!-- [disabled]="true"-->Ingresar</ion-button
+    >
+  </div>
+  <div class="container-center ion-padding-top">
+    <a routerLink="/newpass">¿Olvidaste tu contraseña?</a>
+  </div>
+</ion-content>
